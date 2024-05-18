@@ -19,7 +19,6 @@
     transform: translateX(10px);
   }
 }
-
 @keyframes move3 {
   0%, 100% {
     transform: translate(0);
@@ -31,9 +30,10 @@
     transform: translate(-10px, 10px);
   }
   75% {
-    transform: translate(10px, 10px);
+    transform: translate(20px, -20px); /* Adjusted translation values */
   }
 }
+
 
 .move1 {
   animation: move1 3s infinite;

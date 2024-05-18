@@ -7,7 +7,7 @@ const Home = () => {
     return animations[Math.floor(Math.random() * animations.length)];
   };
 
-  const cvUrl = 'path/to/your/CV.pdf'; // Replace with the actual URL of your CV
+  const cvUrl = 'images/cv.pdf'; // Replace with the actual URL of your CV
 
   return (
     <div className="p-11">
