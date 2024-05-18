@@ -1,36 +1,3 @@
-// import React from "react";
-
-// const Home = () => {
-//   return (
-//     <div className="m-11">
-//       <div className=" flex ">
-//         <div className="w-1/2 text-black w-1/2">
-//           <h1 className="text-6xl">Hello!!!</h1>
-//           <h1 className="text-5xl">I am Muhammad Fahad.</h1>
-//           <h1 className="text-4xl">
-//             I am a full stack web developer.Working as a solo freelancer
-//           </h1>
-//           <div className="">
-//             {" "}
-//             <button className="border-2 border-sky-500 hover:border-black font-bold rounded-md h-9 w-24 hover:bg-blue-300">
-//               Sign up
-//             </button>
-//           </div>
-//         </div>
-
-//         <div className="bg-red-200 w-1/2 flex  justify-items-end">
-//           <img
-//             src="/images/profile-pic2.jpg"
-//             alt="Description"
-//             class="w-full  h-auto sm:w-1/2 md:w-1/3 lg:w-1/4 rounded-lg shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-//           ></img>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;import React from "react";import React from "react";
 import React from "react";
 
 const Home = () => {
@@ -39,6 +6,8 @@ const Home = () => {
   const getRandomAnimation = () => {
     return animations[Math.floor(Math.random() * animations.length)];
   };
+
+  const cvUrl = 'path/to/your/CV.pdf'; // Replace with the actual URL of your CV
 
   return (
     <div className="p-11">
@@ -53,9 +22,15 @@ const Home = () => {
           <h1 className={`text-4xl mb-6 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:text-blue-500 ${getRandomAnimation()}`}>
             I am a full stack web developer. Working as a solo freelancer.
           </h1>
-          <button className="border-2 border-sky-500 hover:border-black font-bold rounded-md h-10 w-28 hover:bg-blue-300 transition-colors duration-300">
-            Sign up
-          </button>
+          <div className="flex justify-center">
+            <a
+              href={cvUrl}
+              download
+              className="border-2 border-sky-500 hover:border-black font-bold rounded-md h-10 w-40 hover:bg-blue-300 transition-colors duration-300 flex items-center justify-center"
+            >
+              Download CV
+            </a>
+          </div>
         </div>
 
         <div className="md:w-1/2 flex justify-center items-center">
