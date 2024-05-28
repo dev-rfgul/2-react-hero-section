@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @keyframes move1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -12,7 +13,8 @@
 }
 
 @keyframes move2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -20,7 +22,8 @@
   }
 }
 @keyframes move3 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0);
   }
   25% {
@@ -34,6 +37,16 @@
   }
 }
 
+@keyframes uncover {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}
 
 .move1 {
   animation: move1 3s infinite;
